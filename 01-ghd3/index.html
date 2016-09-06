@@ -1,0 +1,142 @@
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<p>
+    <svg width="1280" height="720">// Add an SVG
+  
+    <rect x="640" y="360" width="50" height="50" fill="pink" />// Add Rectangles
+    
+    <rect x="640" y="360" width="50" height="50" fill="crimson" />
+        
+    <rect x="640" y="360" width="50" height="50" fill="aqua" />
+        
+        
+    <circle cx="640" cy="360" r="50" style="fill:steelblue;"></circle>// Add Circles
+    
+    <circle cx="640" cy="360" r="50" style="fill:green;"></circle>
+    
+    <circle cx="640" cy="360" r="50" style="fill:black;"></circle>
+  
+    <line x1="0" y1="0" x2="1280" y2="720" stroke="gray" stroke-width="5"  />// Add Lines
+    
+    <line x1="0" y1="0" x2="1280" y2="720" stroke="orangered" stroke-width="5"  />
+        
+    <line x1="0" y1="0" x2="1280" y2="720" stroke="sienna" stroke-width="5"  />
+  
+    <polygon fill="yellow" stroke="blue" stroke-width="2" 
+        points="05,30
+                15,10
+                25,30" />// Add Polygons
+    </svg>
+</p>
+    <button type="button" onclick="randomize()">Randomize Shapes</button>
+<script>
+  console.log(d3); // test if d3 is loaded
+  
+  
+  //not called because caauses the entire selection of circles, rects, etc to be same color
+  /**function getRandomColor() { //taken from stackoverflow
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++ ) {
+          color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+  }**/
+  
+  function randomize() {
+      var circle = d3.selectAll("circle");
+      
+      circle.attr("r", function() { return Math.random() * 500; });
+      
+      circle.attr("cx", function() { return Math.random() * 1280; });
+      
+      circle.attr("cy", function() { return Math.random() * 720; });
+      
+      circle.style("fill", function () { //taken from stackoverflow
+                               var letters = '0123456789ABCDEF';
+                               var color = '#';
+                               for (var i = 0; i < 6; i++ ) {
+                                   color += letters[Math.floor(Math.random() * 16)];
+                               }
+                               return color;
+                           });
+      
+      var rect = d3.selectAll("rect");
+      
+      rect.attr("x", function() { return Math.random() * 1280; });
+      
+      rect.attr("y", function() { return Math.random() * 720; });
+      
+      rect.attr("width", function() { return Math.random() * 1280; });
+      
+      rect.attr("height", function() { return Math.random() * 720; });
+      
+      rect.style("fill", function () { //taken from stackoverflow
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++ ) {
+              color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      });
+      
+      var lines = d3.selectAll("line");
+      
+      lines.attr("x1", function() { return Math.random() * 1280; });
+      
+      lines.attr("x2", function() { return Math.random() * 1280; });
+      
+      lines.attr("y1", function() { return Math.random() * 720; });
+      
+      lines.attr("y2", function() { return Math.random() * 720; });
+      
+      lines.attr("stroke-width", function() { return Math.random() * 10; });
+      
+      lines.style("fill", function () { //taken from stackoverflow
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++ ) {
+              color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      });
+      
+      var poly = d3.selectAll("polygon")
+      
+      poly.attr("stroke-wdth", function() { return Math.random() * 10; });
+      
+      poly.attr("points", function() {
+          var pts = "";
+          for (i = 0; i < Math.random() * 25 + 3; i++) {
+              pts+= Math.random() * 1280 + "," + Math.random() * 720 +"\n";
+          }
+          console.log(pts);
+          return pts;
+      });
+      
+      poly.style("fill", function () { //taken from stackoverflow
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++ ) {
+              color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      });
+      
+      poly.style("stroke", function () { //taken from stackoverflow
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++ ) {
+              color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      });
+      
+  }
+  
+  
+  randomize();
+  
+  
+  
+</script>
