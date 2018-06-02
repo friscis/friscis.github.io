@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.btn div {
+			font-size:24px
+			}
+			h2 {
+			font-size:26px
+			}
+			.btn-basic {
+				background-color: #434549;
+				color: white;
+			}
+			.btn-warning {
+				background-color: #eddf20;
+				color: black;
+			}
+			.btn-danger {
+				background-color: #ed8021;
+				color: black;
+			}
+			.btn-primary {
+				background-color: #164093;
+				color: white;
+			}
+			.btn-success {
+				background-color: #07af6c;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Shared Cardpool Decklists</h2>
+			<br/>
+			<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#share" style="width: 100%">
+				<div>Shared Card Pool</div>
+			</button>
+			<div id="share" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Artifact Lancea	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Dogoran, the Mad Flame Kaiju	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Effect Veiler	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Elemental HERO Shadow Mist	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Ghost Ogre & Snow Rabbit	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Kumongous, the Sticky String Kaiju	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Santa Claws	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Vision HERO Vyon	</td>
+							<td>	x2	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Designator From the Grave	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Instant Fusion	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Interrupted Kaiju Slumber	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Machine Duplication	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Raigeki	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Terraforming	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Ties of the Brethren	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Twin Twisters	</td>
+							<td>	x2	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Anti-Spell Fragrance	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Dimensional Barrier	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Storming Mirror Force	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Torrential Tribute	</td>
+							<td>	x2	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Extra Deck Monsters</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Abyss Dweller	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Black Rose Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Bujintei Tsukuyomi	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Castel, the Skyblaster Musketeer	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Crystal Wing Synchro Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Dragon Infinity	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Dragon Nova	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Rebellion Xyz Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 101: Silent Honor ARK	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 106: Giant Hand	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia Prime	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia the Lightning	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Panzer Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Trishula, Dragon of the Ice Barrier	</td>
+							<td>	x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#cyber" style="width: 100%">
+				<div>ABC Cyber Dragon Deck</div>
+			</button>
+			<div id="cyber" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Ghost Ogre & Snow Rabbit x3	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Instant Fusion x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Interrupted Kaiju Slumber x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Machine Duplication x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Raigeki x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Twin Twisters x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Anti-Spell Fragrance x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Dimensional Barrier x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cyber Dragon Nova x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Panzer Dragon x2	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#counter" style="width: 100%">
+				<div>Counter Fairies Deck</div>
+			</button>
+			<div id="counter" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Ties of the Brethren x3	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Storming Mirror Force x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Bujintei Tsukuyomi x1	</td>
+						</tr>
+						<tr>
+							<td>	Castel, the Skyblaster Musketeer x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Rebellion Xyz Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 106: Giant Hand x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia Prime x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia the Lightning x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-basic" data-toggle="collapse" data-target="#lair" style="width: 100%">
+				<div>Dark Lair Shenanigans Deck</div>
+			</button>
+			<div id="lair" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Elemental HERO Shadow Mist x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Vision HERO Vyon x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Terraforming x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Ties of the Brethren x3	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Black Rose Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Castel, the Skyblaster Musketeer x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Rebellion Xyz Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 106: Giant Hand x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia the Lightning x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#desk" style="width: 100%">
+				<div>Deskbots Deck</div>
+			</button>
+			<div id="desk" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Artifact Lancea x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Effect Veiler x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Effect Veiler x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Ghost Ogre & Snow Rabbit x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Ghost Ogre & Snow Rabbit x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Kumongous, the Sticky String Kaiju x1	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Instant Fusion x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Interrupted Kaiju Slumber x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Machine Duplication x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Twin Twisters x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Anti-Spell Fragrance x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning x1	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Black Rose Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Crystal Wing Synchro Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Dragon Infinity x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Dragon Nova x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Panzer Dragon x2	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#dino" style="width: 100%">
+				<div>Dino Smash Party Deck</div>
+			</button>
+			<div id="dino" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Dogoran, the Mad Flame Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Elemental HERO Shadow Mist x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Ghost Ogre & Snow Rabbit x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Kumongous, the Sticky String Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Vision HERO Vyon x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Interrupted Kaiju Slumber x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Raigeki x1	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning x1	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Black Rose Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Crystal Wing Synchro Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Rebellion Xyz Dragon x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 101: Silent Honor ARK x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 106: Giant Hand x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia Prime x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia the Lightning x1	</td>
+						</tr>
+						<tr>
+							<td>	Trishula, Dragon of the Ice Barrier x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-basic" data-toggle="collapse" data-target="#domain" style="width: 100%">
+				<div>Domain Monarchs Deck</div>
+			</button>
+			<div id="domain" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Dogoran, the Mad Flame Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Kumongous, the Sticky String Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Interrupted Kaiju Slumber x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Terraforming x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Twin Twisters x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Dimensional Barrier x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#paleo" style="width: 100%">
+				<div>Paleozoic Diet Deck</div>
+			</button>
+			<div id="paleo" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Artifact Lancea x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Designator From the Grave x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Raigeki x1	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Anti-Spell Fragrance x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Dimensional Barrier x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Storming Mirror Force x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#abc" style="width: 100%">
+				<div>Pure ABC Deck</div>
+			</button>
+			<div id="abc" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Artifact Lancea x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Dogoran, the Mad Flame Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Effect Veiler x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Ghost Ogre & Snow Rabbit x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Kumongous, the Sticky String Kaiju x1	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Interrupted Kaiju Slumber x1	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Raigeki x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Terraforming x3	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Twin Twisters x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Anti-Spell Fragrance x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Torrential Tribute x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Bujintei Tsukuyomi x1	</td>
+						</tr>
+						<tr>
+							<td>	Castel, the Skyblaster Musketeer x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 101: Silent Honor ARK x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 106: Giant Hand x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia the Lightning x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#red" style="width: 100%">
+				<div>Red-Eyes Dragons Deck</div>
+			</button>
+			<div id="red" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Designator From the Grave x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Raigeki x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Twin Twisters x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Dimensional Barrier x3	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Judgment x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Strike x2	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning x1	</td>
+							<td>	Main	</td>
+						</tr>
+						<tr>
+							<td>	Storming Mirror Force x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Castel, the Skyblaster Musketeer x1	</td>
+						</tr>
+						<tr>
+							<td>	Decode Talker x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia the Lightning x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#time" style="width: 100%">
+				<div>Timelord Shenanigans Deck</div>
+			</button>
+			<div id="time" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Gameciel, the Sea Turtle Kaiju x2	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Cosmic Cyclone x2	</td>
+							<td>	Side	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reborn x1	</td>
+							<td>	Side	</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Torrential Tribute x2	</td>
+							<td>	Main	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#alter" style="width: 100%">
+				<div>Future: Altergeist Deck</div>
+			</button>
+			<div id="alter" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Main/Side</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th>Extra Deck Monsters</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+		</div>
+	</body>
+</html>
