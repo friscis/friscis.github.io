@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.btn div {
+			font-size:24px
+			}
+			h2 {
+			font-size:28px
+			}
+			.btn-danger {
+				background-color: #961f88;
+				color: white;
+			}
+			.btn-primary {
+				background-color: #0461cc;
+				color: white;
+			}
+			.input-group.input-group-unstyled input.form-control {
+				-webkit-border-radius: 5px;
+				   -moz-border-radius: 5px;
+						border-radius: 5px;
+			}
+			.input-group-unstyled .input-group-addon {
+				border-radius: 4px;
+				border: 0px;
+				background-color: transparent;
+			}
+			.glyphicon {
+				font-size: 24px;
+			}
+			.input-lg {
+				font-size: 24px;
+			}
+			.button-wrapper .btn {
+				margin-top:12px;
+			}
+		</style>
+		<script>
+		function myFunction() {
+		  // Declare variables 
+		  var input, filter, table, tr, td, i;
+		  input = document.getElementById("search");
+		  filter = input.value.toUpperCase();
+		  var tables = ["monsters", "spells", "traps", "extra"];
+		  $('.collapse').collapse('show');
+		  for (tb in tables) {
+			  table = document.getElementById(tables[tb]);
+			  tr = table.getElementsByTagName("tr");
+
+			  // Loop through all table rows, and hide those who don't match the search query
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				} 
+			  }
+		  }
+		}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+			   <div class="col-md-6">
+				  <h2>Virtual Trade Binder</h2>
+			   </div>
+			   <div class="col-md-6 text-right button-wrapper">
+				  <button type="submit" onclick="location.href = 'trades.html';" class="btn btn-basic" >
+					 <div>Go to Trade Wants</div>
+				  </button>
+				  </span>
+			   </div>
+			</div>
+			<br/>
+			
+			<div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg"
+                           placeholder="Search Cards" id="search" onkeyup="myFunction()"/>
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+			<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#monsters" style="width: 100%">
+				<div>Monsters</div>
+			</button>
+			<div id="monsters" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Monsters</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	A - Assault Core	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Absolute King Back Jack (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Alector, Sovereign of Birds	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Aleister the Invoker	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Alien Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ally of Justice Clausolas	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Ally of Justice Garadholg	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Ally of Justice Rudra	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Ancient Gear Gadjiltron Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ancient Lamp	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Andro Sphinx	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Arcana Force EX - The Dark Ruler	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Arcana Force EX - The Light Ruler	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Arcana Force XXI - The World	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Archfiend of Gilfer	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Artifact Lancea	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	A-Team: Trap Disposal Unit (Ultimate Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Babycerasaurus	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Barrel Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Barrier Statue of the Drought	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Barrier Statue of the Inferno	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Barrier Statue of the Stormwinds	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Barrier Statue of the Torrent	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Battle Fader	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Beast King Barbaros	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Beast of Talwar	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Behemoth the King of all Animals	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Berlineth the Firestorm Vassal	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Big Core	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Black Luster Soldier	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Black Luster Soldier - Envoy of the Beginning (IOC)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blackwing - Gale the Whirlwind	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blackwing - Gofu the Vague Shadow (OTS)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blast Sphere	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blizzard Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blizzard,  Defender of the Ice Barrier	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Block Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blockman	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blue-Eyes Shining Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blue-Eyes White Dragon (SDK)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Blue-Eyes White Dragon (Various Holo Art)	</td>
+							<td>	x8	</td>
+						</tr>
+						<tr>
+							<td>	Caius the Mega Monarch (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Caius the Shadow Monarch	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Celtic Guardian	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Chaos Sorcerer	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Clear Effector	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Commander Gottoms, Swordmaster	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Contact "C"	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Copycat	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Crusader Endymion	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Crystal Beast Saphire Pegasus	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Dinosaur	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Eltanin	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Harpie Lady	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Jar	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Valley	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Cyberdark Horn	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	D.D. Scout Plane	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	D/D/D Oblivion King Abyss Ragnarok	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dandylion	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Dark Magician (Takahashi Art Jump Promo)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Magician (Various Holo Art)	</td>
+							<td>	x7	</td>
+						</tr>
+						<tr>
+							<td>	Dark Magician of Chaos	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Ruler Ha Des	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Darklord Desire	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Darkness Neosphere	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Deskbot 005	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Deskbot 006	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Deskbot 007	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Deskbot 009	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Deskbot Base	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Destiny Hero - Dreadmaster (Upper Deck Counterfeit)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Destiny Hero - Plasma	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Doggy Diver	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Double Fin Shark	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dragon Queen of Tragic Endings	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dragon Spirit of White	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Dragonic Knight	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dragunity Phalanx	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dreadscythe Harvester	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Duke Shade, the Sinister Shadow Lord	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Earthbound Immortal Ccapac Apu (Ultimate Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Eater of Millions	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ehther the Heavenly Monarch	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Elemental Hero Wildheart	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Eva	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Evocator Chevalier	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Exarion Universe	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Exodia the Forbidden One	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Exxod, Master of the Guard	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	F.A. Auto Navigator	</td>
+							<td>	x7	</td>
+						</tr>
+						<tr>
+							<td>	F.A. Turbo Charger	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fairy King Truesdale	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Featherizers	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Fiendish Rhino Warrior (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Flamvell Dragnov	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Flamvell Guard	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Flamvell Magician	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Flying "C"	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Freed the Brave Wanderer	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Gagaga Girl	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Gandora the Dragon of Destruction	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Garnecia Elefantis	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Geargiarmor	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Gilford of Lightning	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Goblin Zombie	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Goddess of Sweet Revenge	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Golden Homunculus	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Golem Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Gorz the Emissary of Darkness	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Green Baboon, Defender of the Forest	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Grinder Golem	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Guard Penguin	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Guardian Angel Joan	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Guardian Eatos	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Hand of the Six Samurai	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Harpie Lady Sisters	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Heavy Mech Support Armor	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Heavy Mech Support Platform	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Helios - The Primordial Sun	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Helios Duo Megistus	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Herald of Green Light (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Herald of Orange Light (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Herald of Purple Light (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Hino-Kagu-Tsuchi	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Honest (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Infernal Flame Emperor	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Insect Princess	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Invader of Darkness	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Invader of the Throne	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Izanagi	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Jinzo	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Kaibaman	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Kaiser Sea Horse	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Keeper of the Shrine (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Kinetic Soldier	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Corrupter Iblee	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Koa'ki Meiru Guardian	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Kuribandit (Common)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Kuriboh	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Landrobe the Rock Vassal	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Lava Golem	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Lector Pendulum, the Dracoverlord	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Left Arm of the Forbidden One	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Left Leg of the Forbidden One	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Level Eater	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Light and Darkness Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Lord of D.	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Machina Fortress	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Machina Gearframe	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Machina Peacekeeper	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Magician of Black Chaos	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Malefic Stardust Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Malefic Truth Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Manju of the Ten Thousand Hands (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Manticore of Darkness	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Marshmallon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Master Gig	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Master Peace, the True Dracoslayer	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Master with Eyes of Blue	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Maxx "C"	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Megarock Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mekk-Knight Avram (Super)	</td>
+							<td>	x5	</td>
+						</tr>
+						<tr>
+							<td>	Mekk-Knight Green Horizon	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Mekk-Knight Indigo Eclipse	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Mekk-Knight Orange Sunset	</td>
+							<td>	x6	</td>
+						</tr>
+						<tr>
+							<td>	Mekk-Knight Red Moon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mekk-Knight Yellow Star	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Meklord Emperor Granel	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Miscellaneosaurus	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mist Valley Shaman	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mist Valley Soldier	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mist Valley Thunderbird	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mithra the Thunder Vassal	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Moja	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Montage Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mystical Beast of Serket	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mythical Beast Bashilisk	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mythical Beast Medusa	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Necroface	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Needle Burrower	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Neo-Spacian Grand Mole	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Nitro Synchron	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Obelisk the Tormentor (Jump Promo)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Obelisk the Tormentor (Non-Playable)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Obelisk the Tormentor (Playable)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Ogre of Scarlet Sorrow	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Paladin of White Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Parasite Paracide	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Penguin Soldier	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Performapal Five-Rainbow Magician	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Petiteranodon	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Phantom Beast Rock-Lizard	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Phoenix Gearfried	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Plaguespreader Zombie	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Power Angel Valkyria	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Power Breaker	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Raviel, Lord of Phantasms	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Red Ogre	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes B. Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes B. Dragon (LOB)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes Darkness Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes Darkness Metal Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes Wyvern (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes Zombie Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Relinkuriboh (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Relinquished	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Rescue Cat	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Rescue Rabbit (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Rider of the Storm Winds	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Right Arm of the Forbidden One	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Right Leg of the Forbidden One	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Rocket Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Rockstone Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Sacred Arch-Airknight Parshath	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Sadion, the Timelord	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Santa Claws	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Senju of the Thousand Hands	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Serpent Night Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Silent Magician LV8	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Simorgh, Bird of Divinity	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Sinister Serpent	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Skull Archiend of Lightning	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Sky Scourge Enrise	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Slate Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Slifer the Sky Dragon (Non-Playable)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Slifer the Sky Dragon (Playable)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Slifer the Sky Dragon (R Managa Non-Playable Promo)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Sorcerer of Dark Magic	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Spear Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Sphinc Teleia	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Stardust Dragon/Assault Mode	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Storm Shooter	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Stygian Street Patrol (Common)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Super Conductor Tyranno	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Super-Electromagnetic Voltech Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Swift Scarecrow	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Symphonic Warrior Miccs	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Terroking Archfiend	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	The Creator	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	The Dark Creator	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The King of D.	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	The Tyrant Neptune	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The White Stone of Ancients	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	The White Stone of Legend	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	The Wicked Avatar	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The Wicked Dreadroot	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The Wicked Eraser	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The Winged Dragon fo Ra (Non-Playable)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	The Winged Dragon fo Ra (Playable)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Theinen the Great Sphinx	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Thestalos the Firestorm Monarch	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Thunder King Rai-Oh (GX Manga Promo)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Toon Gemini Elf	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Toon Goblin Attack Force	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Tour Guide From the Underworld (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Tragoedia	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Transforming Sphere	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	True King Bahrastos, the Fathomer	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Turrent Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Twilight Rose Knight	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Tyrant Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Tyrant Wing	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Ultimate Insect LV7	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Valkyrion the Magna Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Vampire Genesis	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Vampire Hunter	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Van'Dalgyon the Dark Dragon Lord	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Vanity's Fiend (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Vendread Core	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Victory Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Volcanic Counter	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Volcanic Doomfire	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Vorse Raider	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	W - Wing Catapult	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Warrior of Atlantis	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Water Dragon (Parallel Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	White Horned Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Winged Rhynos	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Witch of the Black Rose (Ultimate Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	World Legacy - "World Chalice" (OTS)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Worm Apocalypse	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Worm Barses	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Worm Cartaros	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Worm Dimikles	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Worm Erokin	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	X-Saber Axel	</td>
+							<td>	x5	</td>
+						</tr>
+						<tr>
+							<td>	X-Saber Uruz	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Y - Dragon Head	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Z - Metal Tank	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Zaphion, the Timelord	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Zeradias, Herald of Heaven	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Zoodiac Whiptail	</td>
+							<td>	x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#spells" style="width: 100%">
+				<div>Spells</div>
+			</button>
+			<div id="spells" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Spells</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Abyssal Designator	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Allure of Darkness (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Axe of Despair	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Berserker Crush	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Black Luster Ritual	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Black Pendant	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Book of Moon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Boot Sector Launch	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Brain Control	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Burrial from a Different Dimension (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Burst Return	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Burst Stream of Destruction	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Butterfly Dagger - Elma	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Card Destruction	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Card of Sanctity	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cards of Consonance (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Change of Heart	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cold Wave	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Cost Down	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Dark Hole	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Hole (Common)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Dark Magical Circle	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Room of Nightmare	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Detonate	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Dimensional Fissure	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Double Summon	</td>
+							<td>	x6	</td>
+						</tr>
+						<tr>
+							<td>	Downbeat	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dragonic Tactics	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dreamland	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Enemy Controller (Common)	</td>
+							<td>	x8	</td>
+						</tr>
+						<tr>
+							<td>	Evolution Burst	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Exchange	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	F.A. City Grand Prix	</td>
+							<td>	X3	</td>
+						</tr>
+						<tr>
+							<td>	F.A. Test Run	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fairy Meteor Crush	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fiend's Sanctuary	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Foolish Burial (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Foolish Burial Goods (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Forbidden Dress	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Forbidden Dress (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fossil Dig (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fullmetalfoes Fusion	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fusion Sage	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Galaxy Cyclone	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Golden Sarcophagus	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Graceful Charity	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Graceful Dice	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Inferno Fire Blast	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Inferno Tempest	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Iron Core of Koa'ki Meiru	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Light of Redemption	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Lightsworn Sabre	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Limiter Removal	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Lost World	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Machine Duplication	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Magical Mallet	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Magical Meltdown	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	March of the Monarchs	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mask of the Accursed	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mausoleum of White	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Megamorph	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mesmeric Control	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Metalfoes Fusion	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mind Control (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Mirage of Nightmare	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Monster Reincarnation	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	My Body as a Shield	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	My Body as a Shield (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mystical Space Typhoon	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Neautron Blast	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Necrovalley (Common)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Overload Fusion (Common)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Painful Choice	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Painful Decision (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Pantheism of the Monarchs	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Pot of Avarice	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Power of the Guardians	</td>
+							<td>	x6	</td>
+						</tr>
+						<tr>
+							<td>	Prohibition	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Reasoning	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Return of the Monarchs	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ring of Defense	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Riryoku	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Scapegoat	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Scapegoat (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Silver's Cry	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Snatch Steal	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Soul Absorption	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Soul Charge (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Soul Exchange	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Soul of Fire	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Swords of Concealing Light	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Swords of Revealing Light	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Temple of the Kings	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Terraforming (Common)	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	The Fang of Critias	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	The Flute of Summoning Dragon	</td>
+							<td>	x6	</td>
+						</tr>
+						<tr>
+							<td>	The Forceful Sentry	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The Monarchs Stormforth (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Toon World	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Trial and Tribulation	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Triangle Ecstasy Spark	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Tri-Blaze Accelerator	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Unexpect Dai (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Unity	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Upstart Goblin (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	White Veil	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Wild Nature's Release	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Wonder Wand	</td>
+							<td>	x3	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#traps" style="width: 100%">
+				<div>Traps</div>
+			</button>
+			<div id="traps" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Traps</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Acid Trap Hole	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Amazoness Archers	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Black Horn of Heaven	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Black Illusion	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blast Held by a Tribute	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blazing Mirror Force	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Bottomless Trap Hole (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Breakthrough Skill	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Breakthrough Skill (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Call of the Grave	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cash Back	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Castle of Dragon Souls	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ceasefire	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Chain Destruction	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Chain Disappearance	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Chaos Trap Hole (OTS)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Cloning	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Cruse of Darkness (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Crush Card Virus	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Crush Card Virus (Variant A - Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Crush Card Virus (Variant B - Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Curse of Anubis	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Bribe (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Dark Mirror Force	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Renewal	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark Spirit of the Silent	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Darklight (Common)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Debunk	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Deck Devestation Virus (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Destiny Board	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Discord	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Eradicator Epidemic Virus (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Escalation of the Monarchs	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Exchange of the Spirit	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Fairy Wind	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Fiendish Chain	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Fiendish Chain (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Full Force Virus (Common)	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Give and Take	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Greed (Ultimate Rare)	</td>
+							<td>	X1	</td>
+						</tr>
+						<tr>
+							<td>	Gryphon Wing	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Harpie's Feather Storm	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Horn of Heaven	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Judgment of Anubis	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Just Desserts	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Level Limit - Area A (Ultimate Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Level Returner	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Light Imprisoning Mirror	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Limiter Overload	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Loop of Destruction	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Macro Cosmos	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Magic Cylinder	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mask of Restrict	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Metal Reflect Slime (Ultimate Rare)	</td>
+							<td>	X2	</td>
+						</tr>
+						<tr>
+							<td>	Metalfoes Combination	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mind Crush	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Miraculous Descent	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mirror Force	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Mirror Wall	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Negate Attack	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Null and Void	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ojama Trio	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Canadia	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Dinomischus	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Eldonia	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Leanchoilia	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Marrella	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Marrella (OTS)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Paleozoic Pikaia	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Parthian Shot	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Pikeru's Circle of Enchantment	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Psychic Trigger	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Quaking Mirror Force	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Quaking Mirror Force (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Radiant Mirror Force	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Rebirth of Parshath	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Recall (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Red-Eyes Spirit	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Relieve Monster	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Return of the Red-Eyes	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ring of Destruction	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ring of Destruction (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Royal Decree	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Royal Surrender (Ultimate Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Shadow of the Secret Sense Scroll Techniques	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Skull Dice	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Scolding	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Solemn Warning (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Starlight Road (Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Survival's End	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	The Monarchs Erupt	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Threatening Roar	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Trap Hole	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Treasure Map	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Trojan Blast	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Vanity's Empitness	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Vendread Revolution	</td>
+							<td>	x4	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#extra" style="width: 100%">
+				<div>Extra Deck Monsters</div>
+			</button>
+			<div id="extra" class="collapse">
+				<br/>
+				<table class="table table-striped table-bordered table-condensed">
+					<thead>
+						<tr>
+							<th style="width: 80%">Extra Deck Monsters</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>	Aegaion the Sea Castrum	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Akashic Magician	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ally of Justice Catastor	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Ancient Fairy Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Archfiend Black Skull Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	A-to-Z - Dragon Buster Cannon	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Azure-Eyes Silver Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blackwing Armor Master	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blue-Eyes Spirit Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blue-Eyes Twin Burst Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Blue-Eyes Ultimate Dragon	</td>
+							<td>	x4	</td>
+						</tr>
+						<tr>
+							<td>	Cairngorgon, Antiluminescent Knight	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cat Shark	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Chimeratech Fortress Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Chimeratech Rampage Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Colossal Fighter	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Cybderdark Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Cyber Dragon Nova (OTS)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Dark End Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Destruction Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Duelittle Chimera	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Ebon High Magician	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Elder Entity N'tss	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Encode Talker	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	F.A. Dawn Dragster	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	F.A. Motorhome Transport	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Full Armored Black Ray Lancer	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Gaia Knight, the Force of Earth	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Galaxy -Eyes Cipher Blade Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Gem-Knight Phantom Quartz	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Hundred-Eyes Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Invoked Cocytus	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Invoked Elysium	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Invoked Purgatrio	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Invoked Raidjin	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Junk Warrior	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	King Dragun	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Cerberus	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Goblin	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Gryphon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Mermaid	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Phoenix	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Knightmare Unicorn	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Magical Android	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Majestic Star Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Masked HERO Anki	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Masked HERO Dian	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Master of Oz (Ultimate Rare)	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Metalfoes Mithrilium	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Mirror Force Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Nitro Warrior	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 13: Embodiment of Crime	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 31: Embodiment of Punishment	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 39: Utopia	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Number 40: Gimmick Puppet of Strings	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 45: Crumble Logos the Prophet of Demolition	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 68 Sanaphond the Sky Prison	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 71:  Rebarian Shark	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 74: Master of Blades	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 85: Crazy Box	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 91: Crystalzero	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number 91: Thunder Spark Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Number S39: Utopia Prime	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Old Entity Hastorr	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Qliphort Genius	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Red Dragon Archfiend	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Sky Cavalry Centaurea	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Stardust Dragon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	Summon Sorcess	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Super Quantal Mech Beast Grampulse	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	T.G. Hyper Librarian	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Tempest Magician	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	The Phantom Knights of Break Sword	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Topologic Trisbaena	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Turbo Cannon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Tyrant Burst Dragon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Underclock Taker	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	Underworld Fighter Balmung	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	VW - Tiger Catapult	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	XY - Dragon Cannon	</td>
+							<td>	x1	</td>
+						</tr>
+						<tr>
+							<td>	XY - Dragon Cannon (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	XYZ - Dragon Cannon	</td>
+							<td>	x2	</td>
+						</tr>
+						<tr>
+							<td>	XYZ - Dragon Cannon (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	XZ - Tank Cannon (Common)	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Zefra Metaltron	</td>
+							<td>	x3	</td>
+						</tr>
+						<tr>
+							<td>	Zoodiac Tigermortar	</td>
+							<td>	x1	</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br/><br/>
+	</body>
+</html>

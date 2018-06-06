@@ -10,7 +10,7 @@
 			font-size:24px
 			}
 			h2 {
-			font-size:26px
+			font-size:28px
 			}
 			.btn-danger {
 				background-color: #961f88;
@@ -35,6 +35,9 @@
 			}
 			.input-lg {
 				font-size: 24px;
+			}
+			.button-wrapper .btn {
+				margin-top:12px;
 			}
 		</style>
 		<script>
@@ -66,7 +69,17 @@
 	</head>
 	<body>
 		<div class="container">
-			<h2>Cards Wants (for trade)</h2>
+			<div class="row">
+			   <div class="col-md-6">
+				  <h2>Cards Wanted for Trades</h2>
+			   </div>
+			   <div class="col-md-6 text-right button-wrapper">
+				  <button type="submit" onclick="location.href = 'binder.html';" class="btn btn-basic" >
+					 <div>Go to Virtual Binder</div>
+				  </button>
+				  </span>
+			   </div>
+			</div>
 			<br/>
 			
 			<div class="form-group">
@@ -242,359 +255,6 @@
 				</table>
 			</div>
 			<br/><br/>
-			<!--<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#mekk" style="width: 100%">
-				<div>Mekk-Knight</div>
-			</button>
-			<div id="mekk" class="collapse">
-				<br/>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Mekk-Knight Blue Sky	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Mekk-Knight Purple Nightfall	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Spells</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	World Legacy Key	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	World Legacy Scars (sneak peak)	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Traps</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	World Legacy's Secret	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	World Legacy Whispers	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Extra Deck Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Mekk-Knight Spectrum Supreme	</td>
-							<td>	x1	</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<br/><br/>
-			<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#invoke" style="width: 100%">
-				<div>Invoked</div>
-			</button>
-			<div id="invoke" class="collapse">
-				<br/>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Aleister the Invoker	</td>
-							<td>	x1	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Spells</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Magical Meltdown	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Invocation	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Extra Deck Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Invoked Mechaba	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Invoked Raidjin	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Invoked Caliga	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Invoked Purgatrio	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Invoked Magellanica	</td>
-							<td>	x1	</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<br/><br/>
-			<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#wind" style="width: 100%">
-				<div>Windwitch</div>
-			</button>
-			<div id="wind" class="collapse">
-				<br/>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Windwitch - Ice Bell	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Windwitch - Glass Bell	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Windwitch - Snow Bell	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Extra Deck Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Windwitch - Winter Bell	</td>
-							<td>	x2	</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<br/><br/>
-			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#alter" style="width: 100%">
-				<div>Altergeist</div>
-			</button>
-			<div id="alter" class="collapse">
-				<br/>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Altergeist Multifaker	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Altergeist Pixiel	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Traps</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Altergeist Emulatelf	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Extra Deck Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Altergeist Kidolga	</td>
-							<td>	x2	</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<br/><br/>
-			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#blue" style="width: 100%">
-				<div>Blue-Eyes</div>
-			</button>
-			<div id="blue" class="collapse">
-				<br/>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Dragon Spirit of White	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	The White Stone of Ancients	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Blue-Eyes Alternative White Dragon	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Sage with Eyes of Blue	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Blue-Eyes Chaos MAX Dragon	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Spells</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	The Melody of Awakening Dragon	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Silver's Cry	</td>
-							<td>	x2	</td>
-						</tr>
-						<tr>
-							<td>	Dragon Ravine (Secret Rare)	</td>
-							<td>	x2	</td>
-						</tr>
-						<tr>
-							<td>	Dragon Shrine (Secret Rare)	</td>
-							<td>	x2	</td>
-						</tr>
-						<tr>
-							<td>	Trade-In (Secret Rare)	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Chaos Form	</td>
-							<td>	x3	</td>
-						</tr>
-						<tr>
-							<td>	Advanced Ritual Art	</td>
-							<td>	x3	</td>
-						</tr>
-					</tbody>
-				</table>
-				<table class="table table-striped table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th style="width: 80%">Extra Deck Monsters</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>	Azure-Eyes Silver Dragon	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Blue-Eyes Spirit Dragon	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Stardust Spark Dragon	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Number 107: Galaxy-Eyes Tachyon Dragon	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Galaxy-Eyes Full Armor Photon Dragon	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Number 95: Galaxy-Eyes Dark Matter Dragon	</td>
-							<td>	x1	</td>
-						</tr>
-						<tr>
-							<td>	Number 38: Hope Harbinger Dragon Titanic Galaxy	</td>
-							<td>	x1	</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<br/><br/>
-		</div>!-->
+			
 	</body>
 </html>
