@@ -37,7 +37,7 @@
 				font-size: 24px;
 			}
 			.button-wrapper .btn {
-				margin-top:12px;
+				margin-top:-72px;
 			}
 		</style>
 		<script>
@@ -51,7 +51,6 @@
 		  for (tb in tables) {
 			  table = document.getElementById(tables[tb]);
 			  tr = table.getElementsByTagName("tr");
-
 			  // Loop through all table rows, and hide those who don't match the search query
 			  for (i = 0; i < tr.length; i++) {
 				td = tr[i].getElementsByTagName("td")[0];
@@ -65,24 +64,32 @@
 			  }
 		  }
 		}
+		function widthChange() {
+			if($(window).width() <= 520) {
+				document.getElementById("headButton").style.marginTop="0px";
+				document.getElementById("buttonWrap").style.textAlign="left";
+				document.getElementById("searchbar").style.marginTop="-6px";
+			}
+			else {
+				document.getElementById("headButton").style.marginTop="-72px";
+				document.getElementById("buttonWrap").style.textAlign="right";
+				document.getElementById("searchbar").style.marginTop="-24px";
+			}
+		}	
 		</script>
 	</head>
-	<body>
+	<body onload="widthChange()" onresize="widthChange()">
 		<div class="container">
-			<div class="row">
-			   <div class="col-md-6">
-				  <h2>Cards Wanted for Trades</h2>
-			   </div>
-			   <div class="col-md-6 text-right button-wrapper">
-				  <button type="submit" onclick="location.href = 'binder.html';" class="btn btn-basic" >
-					 <div>Go to Virtual Binder</div>
-				  </button>
-				  </span>
-			   </div>
-			</div>
+			
+		  <h2>Cards Wanted for Trades</h2>
+		   <div class="text-right button-wrapper" id="buttonWrap">
+			  <button type="submit" onclick="location.href = 'binder.html';" class="btn btn-basic" id="headButton">
+				 <div>Go to Virtual Binder</div>
+			  </button>
+		   </div>
 			<br/>
 			
-			<div class="form-group">
+			<div class="form-group" style="margin-top:-24px" id="searchbar">
                 <div class="input-group">
                     <input type="text" class="form-control input-lg"
                            placeholder="Search Cards" id="search" onkeyup="myFunction()"/>
